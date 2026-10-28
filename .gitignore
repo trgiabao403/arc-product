@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+contracts/out/
+contracts/cache/
+
+# secrets and local state
+.env
+.env.*
+!.env.example
+.circle/
+recovery_file*
+
+# logs captured from the preview
+traces.jsonl
+console.jsonl
+*.log
+
+# OS / editor
+.DS_Store
+.vscode/
