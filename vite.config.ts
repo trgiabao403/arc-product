@@ -27,6 +27,7 @@ export default defineConfig({
       'framer-motion',
       'lucide-react',
       'sonner',
+      'qrcode.react',
       'clsx',
       'tailwind-merge',
       'vite-plugin-node-polyfills/shims/buffer',

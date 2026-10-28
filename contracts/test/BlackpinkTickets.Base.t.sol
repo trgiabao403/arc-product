@@ -93,7 +93,8 @@ abstract contract BlackpinkTestBase is Test {
         t.buyTickets(show, seats);
     }
 
-    function _tid(uint8 show, uint16 seat) internal view returns (uint256) {
-        return t.tokenIdOf(show, seat);
+    /// @dev Pure mirror of tokenIdOf (no external call, so it never consumes a prank/expectRevert).
+    function _tid(uint8 show, uint16 seat) internal pure returns (uint256) {
+        return (uint256(show) + 1) * 1000 + uint256(seat);
     }
 }
